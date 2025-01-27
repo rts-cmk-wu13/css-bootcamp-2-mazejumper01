@@ -1,0 +1,190 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+}
+
+/* repeat(3, 1fr) */
+
+header{
+    grid-column-start: span 3;
+}
+
+main{
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 5rem 25% 43.75rem 5rem;
+}
+
+footer{
+    grid-column: 2 / 3;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: subgrid;
+grid-template-rows: repeat(2, auto);
+
+margin-inline: 2rem;
+}
+
+
+
+.main--ul{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column-start: span 3;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.li--img{
+    grid-column: 2 / 3;
+}
+
+.grid--start{
+
+    width: 50%;
+grid-column: 1;
+grid-row: 1;
+}
+
+.li--menu{
+    display: grid;
+    grid-template-columns: 4rem 1fr 1fr;
+
+}
+.a--menu{
+    grid-column: 2;
+}
+
+.li--login{
+    display: flex;
+    justify-content: end;
+}
+
+.secondary--ul{
+    display: flex;
+    justify-content: center;
+    
+    
+    grid-column-start: span 3;
+    list-style: none;
+}
+
+.secondary--ul li{
+    margin-inline: 1rem;
+}
+
+.center{
+    grid-column: 3;
+    
+}
+
+
+.left{
+    grid-column: 2;
+}
+
+.small--abonnement{
+    margin-block: 1rem;
+}
+
+.main--img{
+    width: 43.75rem;
+    height: 43.75rem;
+}
+
+aside{
+    margin-block-start: 30%;
+    text-align: end;
+    width: 50%;
+}
+
+
+
+
+
+
+.ul--social{
+    list-style: none;
+    display: flex;
+}
+
+.time--comment{
+    display: flex;
+    justify-content: space-between;
+
+    margin-block: 2rem;
+}
+
+.social--float{
+    float: inline-end;
+    width: 10rem;
+    height: 5rem;
+}
+
+.div--clickhere{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.read--grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.read--grid h2{
+    grid-column: span 2;
+}
+
+.read--grid img{
+    width: 10rem;
+    height: 6rem;
+}
+
+
+
+.seneste-nyt{
+    margin-block-start: 3rem;
+}
+
+
+.information{
+    margin-block: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+}
+
+.information h2{
+    display: flex;
+    justify-content: end;
+    grid-column: 1 / -1;
+}
+
+.forsiden{
+    grid-column: 1 / -1;
+}
+
+.information div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    
+}
+
+.kommentar--text{
+    grid-column: 3;
+    grid-row: 4 / -1;
+}
+
+.anbefal{
+
+}
