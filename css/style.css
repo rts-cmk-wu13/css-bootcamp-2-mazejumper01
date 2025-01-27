@@ -4,3 +4,94 @@
 a{
  text-decoration: none;   
 }
+
+h1{
+    font-size: 2rem;
+}
+
+
+.first--articlep{
+    margin-block: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.avatar-section{
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-div{
+    display: grid;
+    grid-template-columns: repeat(2, 3rem);
+    grid-template-rows: repeat(5, 15%);
+    column-gap: 0.25rem;
+
+    width: 20rem;
+   
+}
+
+.udland{
+    grid-column: 1 / -1;
+}
+
+
+
+figure{
+
+    width: auto;
+    grid-row: 2 / span 2;
+    
+    overflow: hidden;
+}
+
+.avatar-img{
+    width: 2.5rem;
+    height: auto;
+    background-color: rgb(230, 230, 230);
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.avatar-navn{
+    
+    grid-column: 2 / 4;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.ul--social{
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+
+
+.avatar-info{
+    font-size: 0.7rem;
+    color: #9d9d9d;
+}
+
+.peter--nygaard{
+    grid-column: span 5;
+}
+
+.btn--click{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    margin-block: 1.5rem;
+    border-radius: 0.5rem;
+}

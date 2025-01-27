@@ -1,12 +1,32 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+}
+
+/* repeat(3, 1fr) */
+
+header{
+    grid-column-start: span 3;
+}
+
+main{
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 5rem 25% 43.75rem 5rem;
+}
+
+footer{
+    grid-column: 2 / 3;
+}
+
 nav{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: subgrid;
 grid-template-rows: repeat(2, auto);
 
 margin-inline: 2rem;
 }
-
-
 
 
 
@@ -33,8 +53,6 @@ grid-row: 1;
 .li--menu{
     display: grid;
     grid-template-columns: 4rem 1fr 1fr;
-    width: 100%;
-
 
 }
 .a--menu{
@@ -59,3 +77,57 @@ grid-row: 1;
     margin-inline: 1rem;
 }
 
+.center{
+    grid-column: 3;
+    
+}
+
+
+.left{
+    grid-column: 2;
+}
+
+.small--abonnement{
+    margin-block: 1rem;
+}
+
+.main--img{
+    width: 43.75rem;
+    height: 43.75rem;
+}
+
+aside{
+    margin-block-start: 30%;
+    text-align: end;
+    width: 50%;
+}
+
+
+
+
+
+
+.ul--social{
+    list-style: none;
+    display: flex;
+}
+
+.time--comment{
+    display: flex;
+    justify-content: space-between;
+
+    margin-block: 2rem;
+}
+
+.social--float{
+    float: inline-end;
+    width: 10rem;
+    height: 5rem;
+}
+
+.div--clickhere{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
