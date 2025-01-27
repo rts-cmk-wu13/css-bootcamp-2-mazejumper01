@@ -154,10 +154,11 @@ aside{
 
 
 .information{
-    margin-block-start: 3rem;
+    margin-block: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
 }
 
 .information h2{
@@ -177,4 +178,13 @@ aside{
 
     height: 100%;
     
+}
+
+.kommentar--text{
+    grid-column: 3;
+    grid-row: 4 / -1;
+}
+
+.anbefal{
+
 }
