@@ -95,3 +95,12 @@ figure{
     margin-block: 1.5rem;
     border-radius: 0.5rem;
 }
+
+.information img{
+    width: 10rem;
+    height: 6rem;
+}
+
+.information div img{
+    width: 100%;
+}

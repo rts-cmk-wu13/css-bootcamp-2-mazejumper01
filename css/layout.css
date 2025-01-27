@@ -131,3 +131,50 @@ aside{
 
     align-items: center;
 }
+
+.read--grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.read--grid h2{
+    grid-column: span 2;
+}
+
+.read--grid img{
+    width: 10rem;
+    height: 6rem;
+}
+
+
+
+.seneste-nyt{
+    margin-block-start: 3rem;
+}
+
+
+.information{
+    margin-block-start: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.information h2{
+    display: flex;
+    justify-content: end;
+    grid-column: 1 / -1;
+}
+
+.forsiden{
+    grid-column: 1 / -1;
+}
+
+.information div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    
+}
