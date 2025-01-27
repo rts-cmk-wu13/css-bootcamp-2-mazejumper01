@@ -1,0 +1,61 @@
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, auto);
+
+margin-inline: 2rem;
+}
+
+
+
+
+
+.main--ul{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column-start: span 3;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.li--img{
+    grid-column: 2 / 3;
+}
+
+.grid--start{
+
+    width: 50%;
+grid-column: 1;
+grid-row: 1;
+}
+
+.li--menu{
+    display: grid;
+    grid-template-columns: 4rem 1fr 1fr;
+    width: 100%;
+
+
+}
+.a--menu{
+    grid-column: 2;
+}
+
+.li--login{
+    display: flex;
+    justify-content: end;
+}
+
+.secondary--ul{
+    display: flex;
+    justify-content: center;
+    
+    
+    grid-column-start: span 3;
+    list-style: none;
+}
+
+.secondary--ul li{
+    margin-inline: 1rem;
+}
+
